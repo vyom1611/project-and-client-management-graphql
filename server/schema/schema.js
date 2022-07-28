@@ -13,6 +13,25 @@ const ClientType = new GraphQLObjectType({
     })
 });
 
+//Type "Project"
+const ProjectType = new GraphQLObjectType({
+    name: 'Project',
+    fields: () => ({
+        id: { type: GraphQLID },
+        name: { type: GraphQLString},
+        description: { type: GraphQLString },
+        status: { type: GraphQLString },
+        //To find the client of the project
+        //Nesting types within types
+        client: { type: ClientType,
+            resolve(parent, args) {
+            //Here parent is like self/this in OOPs, but to work on the actual data we are using
+                return clients.find(client => client.id === parent.clientId)
+            }
+        }
+    })
+})
+
 //This is how we function on our types
 const RootQuery = new GraphQLObjectType({
     name: 'RootQueryType',
@@ -31,6 +50,13 @@ const RootQuery = new GraphQLObjectType({
             type: new GraphQLList(ClientType),
             resolve(parent, args) {
                 return clients
+            }
+        },
+        project: {
+            type: ProjectType,
+            args: {id: { type: GraphQLID } },
+            resolve(parent, args) {
+                return projects.find(project => project.id === args.id)
             }
         }
     }
