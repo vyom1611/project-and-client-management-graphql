@@ -28,7 +28,7 @@ function Clients() {
                 </tbody>
             </table>
             )}
-            </>
+        </>
     );
 }
 
