@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaUser } from "react-icons/fa";
 import { ADD_CLIENT } from "../mutations/clientMutations";
 import { GET_CLIENTS } from "../queries/clientQueries";
-import {useMutation} from "@apollo/client";
+import { useMutation } from "@apollo/client";
 
 function AddClientModal(props) {
     const [name, setName] = useState('');
@@ -47,7 +47,7 @@ function AddClientModal(props) {
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <h5 className="modal-title" id="exampleModalLabel">Add Client</h5>
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">

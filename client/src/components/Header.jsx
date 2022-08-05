@@ -7,7 +7,7 @@ function Header(props) {
             <div className="container">
                 <a className="navbar-brand" href="/">
                     <div className="d-flex"><img src={logo} alt="logo" className="mr-2" />
-                        <div>Project Mgmt</div>
+                        <div>Project Management</div>
                     </div>
                 </a>
             </div>
