@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 import Home from "./pages/Home";
+import Project from './pages/Project'
 import NotFound from "./pages/NotFound";
 
 const cache = new InMemoryCache({
@@ -37,6 +38,7 @@ function App() {
                     <br />
                     <Routes>
                         <Route path="/" element={ <Home /> } />
+                        <Route path="/projects/:id" element={ <Project /> } />
                         <Route path="*" element={ <NotFound /> } />
                     </Routes>
                 </div>
