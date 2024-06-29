@@ -20,4 +20,4 @@ RUN npm run build
 EXPOSE 80
 
 # Define the command to serve the built React app
-CMD ["npm", "run", "serve"]
+CMD ["npm", "run", "start"]

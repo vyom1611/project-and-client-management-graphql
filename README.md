@@ -1,13 +1,13 @@
 # GraphCMS - Full Stack Project and Client Management Application
 
-GraphCMS is a robust, full stack application designed to manage clients and associated projects. The application is developed using the MERN stack (MongoDB, Express.js, React.js, Node.js), with GraphQL used to streamline the API for cleaner, more efficient operations. The Apollo Client is employed to manage state on both local and server sides within the React framework. 
+GraphCMS is a robust, full stack application designed to manage clients and associated projects. The application is developed using the MERN stack (MongoDB, Express.js, React.js, Node.js), with GraphQL used to streamline the API for cleaner, more efficient operations. The Apollo Client is employed to manage state on both local and server sides within the React framework.
 
 ## Project Structure
 
 The repository is organized into the following key directories:
 
-- `frontend/`: This contains all of the front-end code for the React.js application.
-- `backend/`: This directory houses the server-side code, built using Express.js and GraphQL.
+- `client/`: This contains all of the front-end code for the React.js application.
+- `server/`: This directory houses the server-side code, built using Express.js and GraphQL.
 
 ## Detailed Setup Instructions
 
@@ -18,7 +18,7 @@ In order to set up and run the full stack application, follow the step-by-step i
 1. **Navigate to the Backend Directory**
 
 ```
-cd project-and-client-management-graphql/backend
+cd project-and-client-management-graphql/server
 ```
 
 2. **Install Dependencies**
@@ -31,7 +31,7 @@ npm install
 
 3. **Set up Environment Variables**
 
-Create a `.env` file in the root directory. Add the following line, replacing `<your_mongoDB_uri>` with your MongoDB URI:
+Create a `.env` file in the  directory. Add the following line, replacing `<your_mongoDB_uri>` with your MongoDB URI:
 
 ```
 MONGO_URI=<your_mongoDB_uri>
@@ -42,17 +42,17 @@ MONGO_URI=<your_mongoDB_uri>
 You can start the backend server using:
 
 ```
-npm start
+node index.js
 ```
 
 At this point, your server should be up and running at `http://localhost:5500`.
 
-### Frontend
+### Client
 
 1. **Navigate to the Frontend Directory**
 
 ```
-cd project-and-client-management-graphql/frontend
+cd project-and-client-management-graphql/client
 ```
 
 2. **Install Dependencies**
@@ -68,7 +68,7 @@ npm install
 You can start the local development server using:
 
 ```
-npm start
+npm start run
 ```
 
 You should now be able to access the full application at `http://localhost:3000`.
