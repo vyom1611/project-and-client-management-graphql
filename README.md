@@ -2,6 +2,9 @@
 
 GraphCMS is a robust, full stack application designed to manage clients and associated projects. The application is developed using the MERN stack (MongoDB, Express.js, React.js, Node.js), with GraphQL used to streamline the API for cleaner, more efficient operations. The Apollo Client is employed to manage state on both local and server sides within the React framework.
 
+<kbd><img width="880" alt="Screenshot 2024-06-29 at 5 27 45 PM" border="20px solid black" src="https://github.com/vyom1611/project-and-client-management-graphql/assets/93402393/c1834811-570b-4932-b80a-11d0ba81315f"></kbd>
+
+
 ## Project Structure
 
 The repository is organized into the following key directories:
@@ -85,6 +88,14 @@ The GraphCMS application supports a wide range of operations, including:
 - Viewing existing projects
 - Updating project details
 - Deleting projects
+
+<kbd><img width="885" alt="Screenshot 2024-06-29 at 5 27 51 PM" src="https://github.com/vyom1611/project-and-client-management-graphql/assets/93402393/35485080-df47-46c4-a546-8ba66ac037fc"></kbd>
+
+<kbd><img width="931" alt="Screenshot 2024-06-29 at 5 23 19 PM" src="https://github.com/vyom1611/project-and-client-management-graphql/assets/93402393/c54202d0-3cb9-4b0c-b271-d52ab819a182"></kbd>
+
+<kbd><img width="934" alt="Screenshot 2024-06-29 at 5 23 57 PM" src="https://github.com/vyom1611/project-and-client-management-graphql/assets/93402393/6db7e079-7aaa-4233-a406-f1af2f60015b"></kbd>
+
+
 
 In the frontend, the Apollo Client is used to make GraphQL requests to the backend. The backend server processes these requests, responding with data that is then used to update the UI in real-time.
 
